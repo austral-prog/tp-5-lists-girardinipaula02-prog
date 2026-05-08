@@ -10,4 +10,8 @@ def reverse_list(lista):
     Returns:
         Una nueva lista con los elementos en orden inverso
     """
-    pass  # Reemplazar con tu implementación
+    lista.reverse()
+    return lista
+print(reverse_list([1, 2, 3, 4, 5]))
+print(reverse_list(['a', 'b', 'c', 'd']))
+print(reverse_list([]))

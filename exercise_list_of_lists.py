@@ -1,16 +1,13 @@
 # Ejercicio 12: Manipular lista de listas
 
-def list_of_lists(lista_de_listas):
-    """
-    Modifica una lista de 3 listas internas:
-    - Primera lista: solo los primeros 2 elementos
-    - Segunda lista: elementos entre el segundo y cuarto
-    - Tercera lista: solo los últimos 2 elementos
+def list_of_lists(lista):
+    primera = lista[0][:2]      
+    segunda = lista[1][1:4]     
+    tercera = lista[2][-2:]     
 
-    Args:
-        lista_de_listas: Una lista que contiene 3 listas
+    return [primera, segunda, tercera]
+print(list_of_lists([[1, 2, 3], [4, 5, 6, 7, 8], [9, 10, 11, 12]]))
 
-    Returns:
-        La lista de listas modificada según las reglas
-    """
-    pass  # Reemplazar con tu implementación
+print(list_of_lists([[], [4, 5, 6], [10, 11, 12]]))
+
+print(list_of_lists([[1, 2], [], [12]]))

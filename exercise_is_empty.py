@@ -1,13 +1,7 @@
-# Ejercicio 9: Verificar si una lista está vacía
-
 def is_empty(lista):
-    """
-    Determina si una lista está vacía.
+    return len(lista) == 0
+print(is_empty([]))
+print(is_empty([1]))
+print(is_empty(['Red', 'Green', 'White', 'Black']))
 
-    Args:
-        lista: Una lista de elementos
-
-    Returns:
-        True si la lista está vacía, False en caso contrario
-    """
-    pass  # Reemplazar con tu implementación
+    

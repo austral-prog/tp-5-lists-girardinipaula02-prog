@@ -11,4 +11,9 @@ def find_min(lista):
     Returns:
         El valor mínimo de la lista o None si está vacía
     """
-    pass  # Reemplazar con tu implementación
+    if not lista:
+        return None
+    return min(lista)
+print(find_min([3, 7, 2, 9, 1]))
+print(find_min([-5, -2, -8, -1, -10]))
+print(find_min([]))
